@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Morsy
+Exec=morsy
+Icon=io.github.blushcream.Morsy
+Terminal=false
+Type=Application
+Categories=Utility;
+Keywords=GTK;
+StartupNotify=true
+DBusActivatable=true

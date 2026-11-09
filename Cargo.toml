@@ -1,0 +1,15 @@
+[package]
+name = "morsy"
+version = "1.0.0"
+edition = "2021"
+license = "Apache-2.0"
+
+[dependencies]
+gettext-rs = { version = "0.7", features = ["gettext-system"] }
+gtk = { version = "0.9", package = "gtk4", features = ["gnome_47", "blueprint"] }
+rodio = { version = "0.21", default-features = false, features = ["playback"] }
+
+[dependencies.adw]
+package = "libadwaita"
+version = "0.7"
+features = ["v1_6"]

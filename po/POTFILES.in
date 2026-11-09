@@ -1,0 +1,6 @@
+# List of source files containing translatable strings.
+# Please keep this file sorted alphabetically.
+data/io.github.blushcream.Morsy.desktop.in
+data/io.github.blushcream.Morsy.metainfo.xml.in
+data/io.github.blushcream.Morsy.gschema.xml
+src/window.blp

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="/org/blushCream/Morsy">
+    <!-- <file preprocess="xml-stripblanks">window.ui</file> backup the old entries for the xml UI files-->
+    <file preprocess="xml-stripblanks">shortcuts-dialog.ui</file>
+    <file>style.css</file>
+  </gresource>
+</gresources>

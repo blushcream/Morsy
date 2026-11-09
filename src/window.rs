@@ -29,6 +29,8 @@ use rodio::{OutputStreamBuilder, Sink};
 use rodio::source::{SineWave, Source};
 use std::time::Duration;
 
+use gettextrs::gettext;
+
 mod imp {
     use super::*;
 
@@ -97,7 +99,7 @@ mod imp {
 
                         button.remove_css_class("destructive-action");
                         button.set_icon_name("media-playback-start-symbolic");
-                        button.set_tooltip_text(Some("Play"));
+                        button.set_tooltip_text(Some(&gettext("Play")));
 
                         return;
                     }
@@ -129,7 +131,7 @@ mod imp {
 
                 button.add_css_class("destructive-action");
                 button.set_icon_name("media-playback-pause-symbolic");
-                button.set_tooltip_text(Some("Stop"));
+                button.set_tooltip_text(Some(&gettext("Stop")));
 
                 play_morse(&sink, &morse_code);
 
@@ -146,7 +148,7 @@ mod imp {
                         if sink.empty() {
                             button_timeout.remove_css_class("destructive-action");
                             button_timeout.set_icon_name("media-playback-start-symbolic");
-                            button_timeout.set_tooltip_text(Some("Play"));
+                            button_timeout.set_tooltip_text(Some(&gettext("Play")));
                             return glib::ControlFlow::Break;
                         }
                     }

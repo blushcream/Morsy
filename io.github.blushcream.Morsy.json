@@ -1,7 +1,7 @@
 {
     "id" : "io.github.blushcream.Morsy",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "50",
+    "runtime-version" : "51",
     "sdk" : "org.gnome.Sdk",
     "sdk-extensions" : [
         "org.freedesktop.Sdk.Extension.rust-stable"
@@ -18,7 +18,8 @@
         "append-path" : "/usr/lib/sdk/rust-stable/bin",
         "env" : {
             "RUST_BACKTRACE" : "1",
-            "RUST_LOG" : "morsy=debug"
+            "RUST_LOG" : "morsy=debug",
+            "CARGO_NET_OFFLINE" : "true"
         }
     },
     "cleanup" : [

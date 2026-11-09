@@ -1,4 +1,4 @@
-# morsy
+# Morsy
 
 A simple yet beautiful Morse code translator.
 

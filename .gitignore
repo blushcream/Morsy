@@ -13,6 +13,3 @@
 
 # Flatpak Builder cache
 .flatpak-builder
-
-# Auto-Generated
-COPYING

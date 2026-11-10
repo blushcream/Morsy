@@ -84,7 +84,7 @@ mod imp {
 
             let audio_morse_textbox = input_morse.clone();
 
-            //Connect the play button
+            // Connect the play button
 
             play_button.clone().connect_clicked(move |_| {
 
@@ -157,7 +157,7 @@ mod imp {
                 });
             });
 
-            //Connect the input box changes (text one)
+            // Connect the input box changes (text one)
 
             input_text.buffer().connect_changed(move |buffer| {
 
@@ -186,13 +186,13 @@ mod imp {
                 updating_morse.set(false);
             });
 
-            //More of cloned variables
+            // More of cloned variables
 
             let input_text = self.input_text.clone();
             let input_morse = self.input_morse.clone();
             let window = self.obj().clone();
 
-            //Connect the input box changes (morse one)
+            // Connect the input box changes (morse one)
 
             input_morse.buffer().connect_changed(move |buffer| {
 
@@ -242,7 +242,7 @@ impl MorsyWindow {
             .build()
     }
 
-    //Morse backend
+    // Morse backend
 
     fn to_morse(&self, c: char) -> &'static str {
         match c.to_ascii_uppercase() {
@@ -368,7 +368,7 @@ impl MorsyWindow {
     }
 }
 
-//Audio backend
+// Audio backend
 
 fn play_morse(sink: &Sink, morse: &str) {
 
